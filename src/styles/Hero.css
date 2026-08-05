@@ -185,3 +185,15 @@ box-shadow:0 0 50px rgba(37,99,235,.4);
     }
 
 }
+
+.open-work{
+    display:inline-block;
+    margin:20px 0;
+    padding:8px 18px;
+    background:#0f5132;
+    color:#4ade80;
+    border:1px solid #22c55e;
+    border-radius:30px;
+    font-size:14px;
+    font-weight:600;
+}

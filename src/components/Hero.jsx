@@ -15,14 +15,17 @@ function Hero() {
 
         <h1>Sameer More</h1>
 
-        <h2>Data Analyst</h2>
+        <h2>Aspiring Data Analyst</h2>
+
+        <p className="tagline">
+          Power BI • SQL • Python • Excel
+        </p>
 
         <p className="description">
-          B.Tech Computer Science Engineering (AI & ML) graduate passionate
-          about Data Analytics, Business Intelligence, and Data Visualization.
-          Skilled in Power BI, SQL, Python, Excel, DAX, and Power Query with
-          hands-on experience in building interactive dashboards and solving
-          real-world business problems through data-driven insights.
+          B.Tech Computer Science (AI & ML) graduate passionate about Data Analytics
+          and Business Intelligence. Skilled in Power BI, SQL, Python, Excel,
+          DAX and Power Query with hands-on experience building interactive dashboards
+          and analytics solutions.
         </p>
 
         <div className="hero-buttons">
@@ -40,6 +43,10 @@ function Hero() {
             View Projects
           </a>
 
+        </div>
+
+        <div className="open-work">
+          🟢 Open to Work
         </div>
 
         <div className="social-icons">

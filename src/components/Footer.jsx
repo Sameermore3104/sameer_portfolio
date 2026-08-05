@@ -1,5 +1,5 @@
 import "../styles/Footer.css";
-import { FaGithub, FaLinkedin, FaEnvelope, FaHeart } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 function Footer() {
   return (
@@ -9,9 +9,12 @@ function Footer() {
 
         <h2>Sameer More</h2>
 
-        <p>
-          Aspiring Data Analyst passionate about transforming data into
-          meaningful business insights.
+        <p className="footer-tagline">
+          Analyzing Data. Creating Insights. Driving Decisions.
+        </p>
+
+        <p className="footer-tech">
+          Power BI • SQL • Python • Excel
         </p>
 
         <div className="footer-social">
@@ -43,12 +46,7 @@ function Footer() {
       <div className="footer-bottom">
 
         <p>
-          © {new Date().getFullYear()} Sameer More. 
-          All Rights Reserved.
-        </p>
-
-        <p>
-        <FaHeart className="heart" />
+          © {new Date().getFullYear()} Sameer More. All Rights Reserved.
         </p>
 
       </div>
