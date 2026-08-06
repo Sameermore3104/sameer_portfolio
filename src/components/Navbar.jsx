@@ -1,9 +1,11 @@
 import "../styles/Navbar.css";
 import { useState, useEffect } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 function Navbar() {
 
   const [active, setActive] = useState("home");
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
 
@@ -16,7 +18,6 @@ function Navbar() {
       sections.forEach((section) => {
 
         const top = section.offsetTop - 120;
-        const height = section.offsetHeight;
 
         if (window.scrollY >= top) {
           current = section.getAttribute("id");
@@ -34,6 +35,8 @@ function Navbar() {
 
   }, []);
 
+  const closeMenu = () => setMenuOpen(false);
+
   return (
 
     <nav className="navbar">
@@ -42,21 +45,84 @@ function Navbar() {
         Sameer <span>More</span>
       </div>
 
-      <ul className="nav-links">
+      <div
+        className="menu-icon"
+        onClick={() => setMenuOpen(!menuOpen)}
+      >
+        {menuOpen ? <FaTimes /> : <FaBars />}
+      </div>
 
-        <li><a className={active==="home"?"active":""} href="#home">Home</a></li>
+      <ul className={menuOpen ? "nav-links active-menu" : "nav-links"}>
 
-        <li><a className={active==="about"?"active":""} href="#about">About</a></li>
+        <li>
+          <a
+            className={active === "home" ? "active" : ""}
+            href="#home"
+            onClick={closeMenu}
+          >
+            Home
+          </a>
+        </li>
 
-        <li><a className={active==="skills"?"active":""} href="#skills">Skills</a></li>
+        <li>
+          <a
+            className={active === "about" ? "active" : ""}
+            href="#about"
+            onClick={closeMenu}
+          >
+            About
+          </a>
+        </li>
 
-        <li><a className={active==="education"?"active":""} href="#education">Education</a></li>
+        <li>
+          <a
+            className={active === "skills" ? "active" : ""}
+            href="#skills"
+            onClick={closeMenu}
+          >
+            Skills
+          </a>
+        </li>
 
-        <li><a className={active==="experience"?"active":""} href="#experience">Experience</a></li>
+        <li>
+          <a
+            className={active === "education" ? "active" : ""}
+            href="#education"
+            onClick={closeMenu}
+          >
+            Education
+          </a>
+        </li>
 
-        <li><a className={active==="projects"?"active":""} href="#projects">Projects</a></li>
+        <li>
+          <a
+            className={active === "experience" ? "active" : ""}
+            href="#experience"
+            onClick={closeMenu}
+          >
+            Experience
+          </a>
+        </li>
 
-        <li><a className={active==="contact"?"active":""} href="#contact">Contact</a></li>
+        <li>
+          <a
+            className={active === "projects" ? "active" : ""}
+            href="#projects"
+            onClick={closeMenu}
+          >
+            Projects
+          </a>
+        </li>
+
+        <li>
+          <a
+            className={active === "contact" ? "active" : ""}
+            href="#contact"
+            onClick={closeMenu}
+          >
+            Contact
+          </a>
+        </li>
 
       </ul>
 

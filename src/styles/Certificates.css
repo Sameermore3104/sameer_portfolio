@@ -72,3 +72,48 @@
 }
 
 }
+
+/* ========================= */
+/* Certificates Responsive */
+/* ========================= */
+
+@media (max-width:480px){
+
+.certificates{
+    padding:70px 20px;
+}
+
+.certificate-title h2{
+    font-size:32px;
+}
+
+.certificate-title p{
+    font-size:14px;
+    letter-spacing:3px;
+}
+
+.certificate-grid{
+    grid-template-columns:1fr;
+    gap:20px;
+}
+
+.certificate-card{
+    padding:22px;
+    border-radius:18px;
+}
+
+.certificate-card h3{
+    font-size:20px;
+}
+
+.certificate-card h4{
+    font-size:18px;
+    line-height:1.4;
+}
+
+.certificate-card p{
+    font-size:15px;
+    line-height:1.7;
+}
+
+}

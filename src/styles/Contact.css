@@ -99,3 +99,62 @@
 }
 
 }
+
+/* ========================= */
+/* Contact Responsive */
+/* ========================= */
+
+@media (max-width:480px){
+
+.contact{
+    padding:70px 20px;
+}
+
+.contact-title h2{
+    font-size:32px;
+}
+
+.contact-title p{
+    font-size:14px;
+    letter-spacing:3px;
+}
+
+.contact-title span{
+    font-size:15px;
+}
+
+.contact-container{
+    grid-template-columns:1fr;
+    gap:20px;
+}
+
+.contact-card{
+    padding:25px;
+}
+
+.contact-icon{
+    font-size:34px;
+}
+
+.contact-card h3{
+    font-size:20px;
+}
+
+.contact-card p,
+.contact-card a{
+    font-size:15px;
+    word-break:break-word;
+}
+
+.contact-social{
+    gap:18px;
+    margin-top:40px;
+}
+
+.contact-social a{
+    width:50px;
+    height:50px;
+    font-size:20px;
+}
+
+}

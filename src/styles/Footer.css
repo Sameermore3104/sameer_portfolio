@@ -87,3 +87,43 @@
 }
 
 }
+
+/* ========================= */
+/* Footer Responsive */
+/* ========================= */
+
+@media (max-width:480px){
+
+.footer{
+    padding:40px 20px 20px;
+}
+
+.footer-content h2{
+    font-size:24px;
+}
+
+.footer-tagline{
+    font-size:15px;
+    line-height:1.7;
+}
+
+.footer-tech{
+    font-size:13px;
+    line-height:1.6;
+}
+
+.footer-social{
+    gap:15px;
+}
+
+.footer-social a{
+    width:45px;
+    height:45px;
+    font-size:18px;
+}
+
+.footer-bottom p{
+    font-size:13px;
+}
+
+}
