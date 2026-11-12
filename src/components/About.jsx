@@ -1,3 +1,4 @@
+
 import "../styles/About.css";
 import { FaGraduationCap, FaMapMarkerAlt, FaBriefcase } from "react-icons/fa";
 
@@ -8,9 +9,7 @@ function About() {
       id="about"
       data-aos="fade-up"
     >
-
       <div className="about-left">
-
         <p className="section-title">ABOUT ME</p>
 
         <h2>
@@ -38,7 +37,6 @@ function About() {
         </p>
 
         <div className="stats">
-
           <div className="stat-card">
             <h3>2+</h3>
             <span>Projects</span>
@@ -53,13 +51,10 @@ function About() {
             <h3>10+</h3>
             <span>Technologies</span>
           </div>
-
         </div>
-
       </div>
 
       <div className="about-right">
-
         <div className="info-card">
           <FaGraduationCap className="icon" />
           <div>
@@ -86,9 +81,7 @@ function About() {
             <span>Open to Full-Time Opportunities</span>
           </div>
         </div>
-
       </div>
-
     </section>
   );
 }
